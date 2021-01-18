@@ -1,49 +1,22 @@
-<button
-  apk-advanced-button
-  shape="rectangle"
-  cornerRadius="extra-small"
-  color="transparent-primary">
-  Button!
-</button>
-<button
-  apk-advanced-button
-  shape="rectangle"
-  cornerRadius="extra-small"
-  color="transparent-secondary">
-  Button!
-</button>
-<button
-  apk-advanced-button
-  shape="rectangle"
-  cornerRadius="extra-small"
-  color="primary">
-  Button!
-</button>
-<button
-  apk-advanced-button
-  shape="rectangle"
-  cornerRadius="extra-small"
-  color="secondary">
-  Button!
-</button>
-<button
-  apk-advanced-button
-  shape="rectangle"
-  cornerRadius="extra-small"
-  color="success">
-  Button!
-</button>
-<button
-  apk-advanced-button
-  shape="rectangle"
-  cornerRadius="extra-small"
-  color="warning">
-  Button!
-</button>
-<button
-  apk-advanced-button
-  shape="rectangle"
-  cornerRadius="extra-small"
-  color="danger">
-  Button!
-</button>
+<ng-template #modalTemplate>
+	<h2>The Template Modal Works...</h2>
+	<div class="button-wrapper">
+		<button
+      apk-advanced-button
+      color="secondary" (click)="click()">
+      But this button styling doesn't
+    </button>
+	</div>
+</ng-template>
+
+<div class="content">
+	<button apk-advanced-button color="tertiary" (click)="openTemplateModal()">
+          Show the template modal
+        </button>
+	<button apk-advanced-button color="primary" (click)="openComponentModal()">
+          Show the component modal
+        </button>
+	<button apk-advanced-button color="secondary" (click)="openTextModal()">
+          Show the text modal
+        </button>
+</div>
