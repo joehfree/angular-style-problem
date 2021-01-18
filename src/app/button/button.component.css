@@ -1,0 +1,198 @@
+.apk-button {
+  border-style: solid;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  cursor: pointer;
+  margin-top: var(--apk-padding-md);
+  margin-right: var(--apk-padding-md);
+  overflow: hidden;
+}
+
+/* sizes */
+.apk-button[size="small"] {
+  font-size: var(--apk-font-size-sm);
+  padding: var(--apk-padding-sm) var(--apk-padding-md);
+}
+.apk-button[size="medium"] {
+  font-size: var(--apk-font-size-md);
+  padding: var(--apk-padding-md) var(--apk-padding-lg);
+}
+.apk-button[size="large"] {
+  font-size: var(--apk-font-size-lg);
+  padding: var(--apk-padding-lg) var(--apk-padding-xl);
+}
+
+/* colors */
+.apk-button[color="transparent-neutral"] {
+  border-color: var(--apk-color-neutral-med);
+  background-color: transparent;
+  color: var(--apk-color-neutral-med);
+}
+.apk-button[color="transparent-primary"] {
+  border-color: var(--apk-color-primary);
+  background-color: transparent;
+  color: var(--apk-color-primary);
+}
+.apk-button[color="transparent-secondary"] {
+  border-color: var(--apk-color-secondary);
+  background-color: transparent;
+  color: var(--apk-color-secondary);
+}
+.apk-button[color="transparent-tertiary"] {
+  border-color: var(--apk-color-tertiary);
+  background-color: transparent;
+  color: var(--apk-color-tertiary);
+}
+.apk-button[color="transparent-danger"] {
+  border-color: var(--apk-color-danger);
+  background-color: transparent;
+  color: var(--apk-color-danger);
+}
+.apk-button[color="transparent-warning"] {
+  border-color: var(--apk-color-warning);
+  background-color: transparent;
+  color: var(--apk-color-warning);
+}
+.apk-button[color="transparent-success"] {
+  border-color: var(--apk-color-success);
+  background-color: transparent;
+  color: var(--apk-color-success);
+}
+.apk-button[color="neutral"] {
+  border-color: var(--apk-color-neutral-med);
+  background-color: var(--apk-color-neutral-med);
+  color: var(--apk-color-neutral-med-contrast);
+}
+.apk-button[color="primary"] {
+  border-color: var(--apk-color-primary);
+  background-color: var(--apk-color-primary);
+  color: var(--apk-color-primary-contrast);
+}
+.apk-button[color="secondary"] {
+  border-color: var(--apk-color-secondary);
+  background-color: var(--apk-color-secondary);
+  color: var(--apk-color-secondary-contrast);
+}
+.apk-button[color="tertiary"] {
+  border-color: var(--apk-color-tertiary);
+  background-color: var(--apk-color-tertiary);
+  color: var(--apk-color-tertiary-contrast);
+}
+.apk-button[color="danger"] {
+  border-color: var(--apk-color-danger);
+  background-color: var(--apk-color-danger);
+  color: var(--apk-color-danger-contrast);
+}
+.apk-button[color="warning"] {
+  border-color: var(--apk-color-warning);
+  background-color: var(--apk-color-warning);
+  color: var(--apk-color-warning-contrast);
+}
+.apk-button[color="success"] {
+  border-color: var(--apk-color-success);
+  background-color: var(--apk-color-success);
+  color: var(--apk-color-success-contrast);
+}
+
+/* corner radius */
+.apk-button[cornerRadius="none"] {
+  border-radius: 0;
+}
+.apk-button[cornerRadius="extra-small"] {
+  border-radius: var(--apk-border-radius-xs);
+}
+.apk-button[cornerRadius="small"] {
+  border-radius: var(--apk-border-radius-sm);
+}
+.apk-button[cornerRadius="medium"] {
+  border-radius: var(--apk-border-radius-md);
+}
+.apk-button[cornerRadius="large"] {
+  border-radius: var(--apk-border-radius-lg);
+}
+.apk-button[cornerRadius="extra-large"] {
+  border-radius: var(--apk-border-radius-xl);
+}
+
+/* border thickness */
+.apk-button[stroked="false"] {
+  border-width: 0;
+}
+.apk-button[borderThickness="extra-small"] {
+  border-width: var(--apk-border-width-xs);
+}
+.apk-button[borderThickness="small"] {
+  border-width: var(--apk-border-width-sm);
+}
+.apk-button[borderThickness="medium"] {
+  border-width: var(--apk-border-width-md);
+}
+.apk-button[borderThickness="large"] {
+  border-width: var(--apk-border-width-lg);
+}
+.apk-button[borderThickness="extra-large"] {
+  border-width: var(--apk-border-width-xl);
+}
+
+/* border color */
+.apk-button[borderColor="primary"] {
+  border-color: var(--apk-color-primary);
+}
+.apk-button[borderColor="secondary"] {
+  border-color: var(--apk-color-secondary);
+}
+.apk-button[borderColor="tertiary"] {
+  border-color: var(--apk-color-tertiary);
+}
+.apk-button[borderColor="neutral"] {
+  border-color: var(--apk-color-neutral-med);
+}
+
+/* round */
+.apk-button[shape="round"] {
+  overflow: no-display;
+}
+
+/* round or square */
+.apk-button[shape="round"],
+.apk-button[shape="square"] {
+  border-radius: 50%;
+  align-items: center;
+  align-content: center;
+  padding: 0;
+  &[size="small"] {
+    height: calc(var(--apk-font-size-sm) + (var(--apk-padding-sm) * 3));
+    width: calc(var(--apk-font-size-sm) + (var(--apk-padding-sm) * 3));
+  }
+  &[size="medium"] {
+    height: calc(var(--apk-font-size-md) + (var(--apk-padding-md) * 3));
+    width: calc(var(--apk-font-size-md) + (var(--apk-padding-md) * 3));
+  }
+  &[size="large"] {
+    height: calc(var(--apk-font-size-lg) + (var(--apk-padding-lg) * 3));
+    width: calc(var(--apk-font-size-lg) + (var(--apk-padding-lg) * 3));
+  }
+}
+
+/* elevation */
+.apk-button[elevation="none"] {
+  box-shadow: none;
+}
+.apk-button[elevation="low"] {
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.35);
+}
+.apk-button[elevation="medium"] {
+  box-shadow: 0 1px 16px 0 rgba(0, 0, 0, 0.4);
+}
+.apk-button[elevation="high"] {
+  box-shadow: 0 1px 28px 0 rgba(0, 0, 0, 0.5);
+}
+
+/* disabled */
+.apk-button[disable="true"] {
+  opacity: 35%;
+}
+.apk-button[disable="false"] {
+  opacity: 100%;
+}

@@ -1,0 +1,115 @@
+:root {
+  /** primary **/
+  --apk-color-primary: rgba(56, 128, 255, 1);
+  --apk-color-primary-contrast: rgba(255, 255, 255, 1);
+  --apk-color-primary-darker: rgba(49, 113, 224, 1);
+  --apk-color-primary-lighter: rgba(76, 141, 255, 1);
+
+  /** secondary **/
+  --apk-color-secondary: rgba(61, 194, 255, 1);
+  --apk-color-secondary-contrast: rgba(255, 255, 255, 1);
+  --apk-color-secondary-darker: rgba(54, 171, 224, 1);
+  --apk-color-secondary-lighter: rgba(80, 200, 255, 1);
+
+  /** tertiary **/
+  --apk-color-tertiary: rgba(82, 96, 255, 1);
+  --apk-color-tertiary-contrast: rgba(255, 255, 255, 1);
+  --apk-color-tertiary-darker: rgba(72, 84, 224, 1);
+  --apk-color-tertiary-lighter: rgba(99, 112, 255, 1);
+
+  /** success **/
+  --apk-color-success: rgba(45, 211, 111, 1);
+  --apk-color-success-contrast: rgba(255, 255, 255, 1);
+  --apk-color-success-darker: rgba(40, 186, 98, 1);
+  --apk-color-success-lighter: rgba(66, 215, 125, 1);
+
+  /** warning **/
+  --apk-color-warning: rgba(255, 196, 9, 1);
+  --apk-color-warning-contrast: rgba(0, 0, 0, 1);
+  --apk-color-warning-darker: rgba(224, 172, 8, 1);
+  --apk-color-warning-lighter: rgba(255, 202, 34, 1);
+
+  /** danger **/
+  --apk-color-danger: rgba(235, 68, 90, 1);
+  --apk-color-danger-contrast: rgba(255, 255, 255, 1);
+  --apk-color-danger-darker: rgba(207, 60, 79, 1);
+  --apk-color-danger-lighter: rgba(237, 87, 107, 1);
+
+  /** neutral-hi **/
+  --apk-color-neutral-hi: rgba(34, 36, 40, 1);
+  --apk-color-neutral-hi-contrast: rgba(255, 255, 255, 1);
+  --apk-color-neutral-hi-darker: rgba(30, 32, 35, 1);
+  --apk-color-neutral-hi-lighter: rgba(56, 58, 62, 1);
+
+  /** neutral-neutral-med **/
+  --apk-color-neutral-med: rgba(146, 148, 156, 1);
+  --apk-color-neutral-med-contrast: rgba(255, 255, 255, 1);
+  --apk-color-neutral-med-darker: rgba(128, 130, 137, 1);
+  --apk-color-neutral-med-lighter: rgba(157, 159, 166, 1);
+
+  /** neutral-low **/
+  --apk-color-neutral-low: rgba(244, 245, 248, 1);
+  --apk-color-neutral-low-contrast: rgba(0, 0, 0, 1);
+  --apk-color-neutral-low-darker: rgba(215, 216, 218, 1);
+  --apk-color-neutral-low-lighter: rgba(245, 246, 249, 1);
+
+  /** background-neutral **/
+  --apk-color-background-neutral: rgba(253, 253, 253, 1);
+  --apk-color-background-neutral-contrast: rgba(0, 0, 0, 1);
+  --apk-color-background-neutral-darker: rgba(250, 250, 250, 1);
+  --apk-color-background-neutral-lighter: rgba(255, 255, 255, 1);
+
+  /** background-colored **/
+  --apk-color-background-colored: rgb(21, 140, 209);
+  --apk-color-background-colored-contrast: rgba(255, 255, 255, 1);
+  --apk-color-background-colored-darker: rgb(8, 111, 170, 1);
+  --apk-color-background-colored-lighter: rgb(37, 154, 223, 1);
+}
+
+:root {
+  --apk-padding-xs: 0.25rem;
+  --apk-padding-sm: 0.375rem;
+  --apk-padding-md: 0.5rem;
+  --apk-padding-lg: 0.75rem;
+  --apk-padding-xl: 1rem;
+
+  --apk-margin-xs: 0.25rem;
+  --apk-margin-sm: 0.375rem;
+  --apk-margin-md: 0.5rem;
+  --apk-margin-lg: 0.75rem;
+  --apk-margin-xl: 1rem;
+
+  --apk-border-radius-xs: 0.25rem;
+  --apk-border-radius-sm: 0.375rem;
+  --apk-border-radius-md: 0.5rem;
+  --apk-border-radius-lg: 0.75rem;
+  --apk-border-radius-xl: 1rem;
+
+  --apk-border-width-xs: 0.0625rem;
+  --apk-border-width-sm: 0.125rem;
+  --apk-border-width-md: 0.25rem;
+  --apk-border-width-lg: 0.375rem;
+  --apk-border-width-xl: 0.5rem;
+
+  --apk-font-size-xs: 0.75rem;
+  --apk-font-size-sm: 0.875rem;
+  --apk-font-size-md: 1rem;
+  --apk-font-size-lg: 1.375rem;
+  --apk-font-size-xl: 1.75rem;
+
+  --apk-font-weight-ultralight: 6.25rem;
+  --apk-font-weight-light: 12.5rem;
+  --apk-font-weight-medium: 25rem;
+  --apk-font-weight-heavy: 43.75rem;
+  --apk-font-weight-ultraheavy: 56.25rem;
+
+  --apk-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+* {
+  font-family: var(--apk-font-family);
+}
+
+/** FOR SOME REASON WHEN I IMPORT HERE IT WORKS **/
+@import "./app/button/button.component.css";
